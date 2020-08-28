@@ -1,0 +1,10 @@
+program: main_SBMs_node_classification.py
+method: grid
+metric:
+  name: val_loss
+  goal: minimize
+parameters:
+  dataset:
+    values: ["SBM_PATTERN"]
+  config:
+    values: ["configs/SBMs_node_clustering_MLP_PATTERN_100k.json", "configs/SBMs_node_clustering_GCN_PATTERN_100k.json", "configs/SBMs_node_clustering_GraphSage_PATTERN_100k.json", "configs/SBMs_node_clustering_GatedGCN_PATTERN_100k.json", "configs/SBMs_node_clustering_GAT_PATTERN_100k.json", "configs/SBMs_node_clustering_MoNet_PATTERN_100k.json"]
